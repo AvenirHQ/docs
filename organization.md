@@ -24,9 +24,9 @@ On the flip side, if a team member pings you over Slack about a non-urgent issue
 
 ## 🚨 Emergencies
 
-In the event of an emergency, use text or phone to reach team members who are needed.
+For most projects, an emergency is handled by the Avenir HQ team, and should not require immediate development changes/fixes. 
 
-Jason will be providing on-call service for the ISR app during business hours. He will be in charge of routing requests to the appropriate team members.
+In the event that there is a critical bug that blocks normal use of the application, we will establish a protocol with the client as to how to handle the situation from a customer management standpoint. Normal hours and availability are all that are required of the dev team at this time.
 
 ## 👀 Code Reviews
 
@@ -38,7 +38,7 @@ You might need to ping around on Slack or Trello to determine who will be availa
 
 In general, use rebases and squashes to keep the Git history clean. Avoid merge commits and extraneous progress commits.
 
-We subscribe to the overall flow outlined here: [https://github.com/thoughtbot/guides/tree/master/protocol/git](https://github.com/thoughtbot/guides/tree/master/protocol/git).
+We subscribe to the overall flow outlined here: [https://github.com/AvenirHQ/guides/tree/master/protocol/git](https://github.com/AvenirHQ/guides/tree/master/protocol/git).
 
 ## 👷 CI & tests
 
@@ -48,7 +48,7 @@ TBD
 
 Every week we hold a team-wide meeting for about an hour on Google Hangouts.
 
-Find the agenda for the weekly call [here](https://docs.google.com/document/d/1oeM1sDIcoUU-1SHuxmGdPJIH-TTbteFH4dyVZFEKF-4/edit).
+In the team Trello board, there is a card titled "Weekly Call" with a link to the relevant agenda document.
 
 ### Before the call
 
