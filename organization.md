@@ -54,7 +54,7 @@ Find the agenda for the weekly call [here](https://docs.google.com/document/d/1o
 
 Any notes, questions, or feedback **can be added to the agenda** in advance of the call for the team to discuss.
 
-Team members **allot 5-10 minutes before the call** to try to put together their tasks for the week. This involves moving cards from "Backlog" to "Next Up" and putting your face on them. Your cards in "Next Up" reflect your goal tasks for the week.
+Team members **allot 5-10 minutes before the call** to try to put together their tasks for the week. This involves claiming cards in "Next Up" (putting your face on them). Your cards in "Next Up" reflect your goal tasks for the week. By the call start time, all cards in Next Up should ideally be claimed. Backlog cards should only be moved to Next Up if all Next Up cards are claimed. 
 
 > No worries if your tasks for the week are not clear. They can be compiled during the call.
 
@@ -91,6 +91,8 @@ We deploy branches to staging.
 
 ## 🔮 Trello
 
+*If you're new to Trello, see this: [https://trello.com/guide](https://trello.com/guide)*
+
 ### Usage tenants
 
 1. It is the source of truth
@@ -115,7 +117,7 @@ We deploy branches to staging.
 
 ### Board rules
 
-1. No assigning cards to other people. Only assign cards to yourself. If you want someone to assign themselves to a card, mention that person.
+1. No assigning cards to other people. Only assign cards to yourself. If you want suggest someone claim a card, @-mentioned that person.
 
 2. Only 1 person per card in the **In Progress** list at any time.
 
@@ -123,19 +125,21 @@ We deploy branches to staging.
 
 4. Use the "Priority" label sparingly. Ideally no more than 1 card per category should be labeled "Priority"
 
+5. Only the board owner should be moving cards to **Next Up** from **Backlog**.
+
 ### List descriptions
 
 **Discussion/Ideas**
 
-This list is where new ideas, bugs, and other to-be-defined tickets belong. Each day, this list should be cleared, either defining cards and moving to the Backlog, or to the Icebox. Any task that is not specified to the point that someone else could take your idea and run with it belongs in this list until it has been fully specified. It is your job as the card creator to see a ticket through, otherwise, the card will be added to the **Icebox** or archived.
+This list is where new ideas, bugs, and other to-be-defined tickets belong. Each week, this list should be cleared, either defining cards and moving to the Backlog, or to the Icebox. Any task that is not specified to the point that someone else could take your idea and run with it belongs in this list until it has been fully specified. It is your job as the card creator to see a ticket through, otherwise, the card will be added to the **Icebox** or archived after the next weekly team call.
 
 **Backlog**
 
-This is the running list of ready-to-go tasks that are labeled according to their category. At our weekly meeting, we will select what cards from this list are added to the **Next Up** list to be completed in the next week.
+This is the running list of ready-to-go tasks that are labeled according to their category and project/domain. Cards are moved from **Backlog** to **Next Up** only during the weekly meeting, or by the Trello board owner. Cards are generally in priority order from top-to-bottom.
 
 **Next Up**
 
-This is the priority list of tasks to be accomplished by the Lussier team in the **upcoming week**. No new cards can be added unless they are deemed *Critical* or if all existing cards in the **Next Up** list have been set in motion. When you are ready to start a task in the **Next Up** list, you "add your face" to the card by adding yourself as a member.
+This is the priority list of tasks to be accomplished by the team in the **next week**. No new cards should only be added if they are deemed critical to an existing card in **Next Up** or if all existing cards in the **Next Up** list have been set in motion. When you are ready to start a task in the **Next Up** list, you "add your face" to the card by adding yourself as a member.
 
 **In Progress**
 
@@ -147,24 +151,34 @@ For code-related tasks, this list is where a card goes when it has been implemen
 
 **Acceptance Test on Staging**
 
-When a pull request has been approved and merged into master, we deploy the code to staging, and notify the project stakeholders to review and approve.
+Test your feature branch on staging. Once changes are confirmed, merge to master and move the card forward.
 
 **Ready for Production**
 
-When a project stakeholder has approved the changes on staging, they move the card to **Ready for Production** and notify the developer who "owns" the card. The card is ready to deploy to production, and the card can be moved to **Done (Week of <date>)**
+Cards should rarely sit here for long. When new changes are merged to `master`, it should be ready to deploy to production. Once deployed to production, move the card to the appropriate **Done** list.
+
+Note: We try to deploy to production during standard business hours to make sure a stakeholder can be around to catch any unforseen issues. 
 
 **Done (Week of <date>)**
 
 When a card is complete, we move it to this list.
 
-### Label descriptions
+### Card Types (labels)
 
-**DEV** — label for any cards to be completed by the Dev team pertaining to development.
+Card types should not be changed by the team. Card types are identified by ALL CAPS. These labels exist to add specification to the type of work contained in a card.
 
-**DESIGN** — label for any cards to completed by the Dev team pertaining to design.
+**DEV** — Code-related TODOs for the team.
 
-**ADMIN** — label for any cards not pertaining to code, but related to the production of code.
+**OPERATIONS / MGMT** - Dev team tasks that require setup or changes to a non-technical system.
+
+**REVIEW / SPEC / DOCS** — label for any cards not pertaining to code, but related to the production of code.
 
 **SYSOPS** — label for any cards to be completed by the Dev team or by SysAdmin.
 
-**Priority** — can be considered a decorator label that should only exist with an ALLCAPS category label.
+### Card decorators (labels)
+
+Card decorators can be added, removed, and changed by the team. These are labels for convenience to add filtering that is relevant to the cards in **Backlog**, **Next Up**, and **In Progress**. 
+
+**bug** — used to identify bugs. Usually accompany the DEV card type.
+
+Other examples of decorators: v1, v2, data migration.
