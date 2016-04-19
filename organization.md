@@ -68,6 +68,29 @@ We will use ESLint for all JS code.
 
 ## 🚢 Deploys
 
+### DeployBot
+
+For projects using DeployBot, we utilize a `staging` branch in git that is watched by DeployBot.
+
+Staging deploy:
+
+1. Rebase and squash changes onto `staging` branch
+2. Access Avenir Deploybot: [https://avenirhq.deploybot.com/](https://avenirhq.deploybot.com/)
+3. Navigate to correct Repository > Environment (in this case environment is `staging`)
+4. Click "Deploy"
+5. Because of the way DeployBot works, after staging environment has been used for QA, be sure to use the "Rollback to ..." button to "reset to `master`".
+6. After DeployBot Rollback has finished, reset git branch `staging` to `master`. **Warning: Be sure to roll back in Deploybot BEFORE you reset branch `staging` to `master` as Deploybot will break trying to track changes on a branch that has been pushed with `--force`. **
+
+
+Production deploy: 
+
+1. Follow github protocol here for merging reviewed code changes: [https://github.com/AvenirHQ/guides/tree/master/protocol/git](https://github.com/AvenirHQ/guides/tree/master/protocol/git).
+2. Access Avenir Deploybot: [https://avenirhq.deploybot.com/](https://avenirhq.deploybot.com/)
+3. Navigate to Repository > Environment (in this case environment is `production`)
+4. Click "Deploy"
+5. After successful deploy to production, follow "Staging deploy" instructions to match staging environment to production environment. 
+
+
 ### Staging
 
 We deploy branches to staging.
