@@ -8,7 +8,7 @@ The format, the content, and the organization are all subject to change. Everyth
 
 # The tools we use
 
-**generally:**
+### generally:
 
 - Slack
 - Trello
@@ -19,7 +19,7 @@ The format, the content, and the organization are all subject to change. Everyth
 - Lastpass (for shared team passwords and credentials)
 - Helpscout
 
-**for code-related tasks:**
+### for code-related tasks:
 
 - Github
 - Heroku
@@ -28,14 +28,14 @@ The format, the content, and the organization are all subject to change. Everyth
 - 3rd party APIs (see specific projects for details)
 - Programming language agnostic (see specific projects for details)
 
-**for design-related tasks:**
+### for design-related tasks:
 
 - Sketch
 - Adobe Creative Suite (Photoshop, InDesign, Illustrator)
 - Balsamiq
 - Gliffy (or other diagramming tool of choice)
 
-**sparingly:**
+### sparingly:
 
 - Doodles (for scheduling team meetings/calls)
 
@@ -175,49 +175,53 @@ The format is a regular bi-weekly 20 min call that is required for all active co
 
 ## List descriptions
 
-**Reference**
+### Reference
 
 Most Trello boards will have a reference list as the first list. These are cards with discussions or links to spec documents that are notable for all project team members to be aware of.
 
-**Discussion/Ideas**
+### Discussion/Ideas
 
 This list is where new ideas, bugs, and other to-be-defined tickets belong. Each week, this list should be cleared, either defining cards and moving to the Backlog, or to the Icebox. Any task that is not specified to the point that someone else could take your idea and run with it belongs in this list until it has been fully specified. It is your job as the card creator to see a ticket through, otherwise, the card will be added to the **Icebox** or archived after the next weekly team call.
 
-**Backlog**
+### Backlog
 
 This is the running list of ready-to-go tasks that are labeled according to their category and project/domain. Cards are moved from **Backlog** to **Next Up** only during the weekly meeting, or by the Trello board owner. Cards are generally in priority order from top-to-bottom.
 
-**Next Up**
+### Next Up
 
 This is the priority list of tasks to be accomplished by the team in the **next week**. No new cards should only be added if they are deemed critical to an existing card in **Next Up** or if all existing cards in the **Next Up** list have been set in motion. When you are ready to start a task in the **Next Up** list, you "add your face" to the card by adding yourself as a member.
 
-**In Progress**
+### This Week
+
+Sometimes, as a deadline approaches, the team may use this list to help prioritize upcoming tasks for the next week. In this case, This Week takes over for Next Up, and Next Up becomes a more high priority backlog. This list is also useful in weekly calls, where the team can see what was actually done vs. what was planned for the previous week.
+
+### In Progress
 
 This list represents the current task being completed.
 
-**Review**
+### Review
 
 When a task has been completed in part or in full, the card should be moved by the card owner to the "Review" list and a reviewer directly notified that a review is needed with an @-mention. 
 
 For code-related tasks a pull request (PR) in Github will accompany the move to the "Review" list.
 
-**QA on Staging** — _For code-related Trello boards only._ 
+### QA on Staging — _For code-related Trello boards only._
 
 When a code-related change is ready for QA review, move the card to "QA on staging" and notify a member responsible for QA with an @-mention. By default team leads are responsible for QA unless there is a dedicated QA resource for the project. 
 
 Once changes are confirmed, merge to master and move the card forward.
 
-**Ready for Production** — _For code-related Trello boards only._ 
+### Ready for Production — _For code-related Trello boards only._
 
 Cards should rarely sit here for long. When new changes are merged to `master`, it should be ready to deploy to production. Once deployed to production, move the card to the appropriate **Done** list.
 
 > Note: We try to deploy to production during standard business hours (Pacific Time) to make sure a stakeholder can be around to catch any unforeseen issues.
 
-**Done (Week of ...)**
+### Done (Week of ...)
 
 When a card is complete, we move it to the appropriate "Done" list.
 
-**Icebox**
+### Icebox
 
 When a card is been deemed out of scope for the project, it is preserved in the "Icebox" for later reference. This is a list used mostly be the board master. 
 
