@@ -15,7 +15,7 @@ The format, the content, and the organization are all subject to change. Everyth
 - Google Drive
 - Google Calendar
 - Google Hangouts
-- Toggl (or time tracker of choice)
+- Toggl (for time tracking and reporting)
 - Lastpass (for shared team passwords and credentials)
 - Helpscout
 
@@ -231,11 +231,11 @@ Card types should not be changed very often to avoid confusing the team. Board m
 
 Card types Trello labels written in ALL CAPS. These labels exist to add specification to the type of work contained in a card.
 
-**DEV** — Code-related TODOs for the team.
+**DEV:API** — Code TODO that includes backend code requirements.
 
-**OPERATIONS / MGMT** - Dev team tasks that require setup or changes to a non-technical system.
+**DEV:CLIENT** — Code TODO that includes frontend/client code requirements.
 
-**REVIEW / SPEC / DOCS** — label for any cards not pertaining to code, but related to the production of code.
+**REVIEW/SPEC/DOCS** — label for any cards not pertaining to code, but related to the production of code.
 
 **SYSOPS** — label for any cards to be completed by the Dev team or by SysAdmin.
 
