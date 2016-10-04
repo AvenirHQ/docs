@@ -223,7 +223,7 @@ When a card is complete, we move it to the appropriate "Done" list.
 
 ### Icebox
 
-When a card is been deemed out of scope for the project, it is preserved in the "Icebox" for later reference. This is a list used mostly be the board master. 
+When a card is been deemed out of scope for the project, it is preserved in the "Icebox" for later reference. This is a list used mostly by the board master. 
 
 ## Card Types (Trello labels)
 
